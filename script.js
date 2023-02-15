@@ -34,4 +34,12 @@ console.log(asideElement.style.height);
 
 asideElement.style.overflow = 'auto';
 
+// Task 2 change background
+
+let bodyTag = document.querySelector("body")
+
+bodyTag.style.backgroundImage = "none";
+bodyTag.style.backgroundColor = "#ffffff"
+console.log(bodyTag.style.backgroundColor);
+
 
