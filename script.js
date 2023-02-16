@@ -29,7 +29,7 @@ asideElement.appendChild(fragment);
 // console.log(asideElement)
 
 asideElement.style.height = '500px';
-console.log(asideElement.style.height);
+// console.log(asideElement.style.height);
 // console.log(asideElement.offsetHeight);
 
 asideElement.style.overflow = 'auto';
@@ -40,6 +40,13 @@ let bodyTag = document.querySelector("body")
 
 bodyTag.style.backgroundImage = "none";
 bodyTag.style.backgroundColor = "#ffffff"
-console.log(bodyTag.style.backgroundColor);
+// console.log(bodyTag.style.backgroundColor);
 
+// Task 3 add menu items on click
 
+const sandwichBtn = document.querySelector('.navbar-toggler');
+const navMenu = document.querySelector('.collapse');
+
+sandwichBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
